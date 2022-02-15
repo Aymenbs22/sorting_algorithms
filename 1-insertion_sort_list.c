@@ -8,9 +8,7 @@
 void swap(listint_t **list, listint_t *f, listint_t *s)
 {
 
-	if (f == NULL)
-		return;
-	if (s == NULL)
+	if (f == NULL && s == NULL)
 		return;
 	if (*list == f)
 		*list = s;
